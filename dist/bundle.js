@@ -48,15 +48,56 @@ const equipo1_namespaceObject = __webpack_require__.p + "imgs/equipo1.jpg";
 const equipo2_namespaceObject = __webpack_require__.p + "imgs/equipo2.jpg";
 ;// CONCATENATED MODULE: ./src/imgs/equipo3.jpg
 const equipo3_namespaceObject = __webpack_require__.p + "imgs/equipo3.jpg";
+;// CONCATENATED MODULE: ./src/imgs/carrusel1.jpg
+const carrusel1_namespaceObject = __webpack_require__.p + "imgs/carrusel1.jpg";
+;// CONCATENATED MODULE: ./src/imgs/carrusel2.jpg
+const carrusel2_namespaceObject = __webpack_require__.p + "imgs/carrusel2.jpg";
+;// CONCATENATED MODULE: ./src/imgs/carrusel3.jpg
+const carrusel3_namespaceObject = __webpack_require__.p + "imgs/carrusel3.jpg";
 ;// CONCATENATED MODULE: ./src/index.js
 
 
-console.log("Archivo index.js en ejecución...")
+console.log("Archivo index.js en ejecución...");
 
 // Importar las imágenes para que Webpack las procese
-;
 
 
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let indice = 0;
+  const img = document.querySelectorAll(".carrusel-item");
+  const totalImgs = img.length;
+
+  function mostrarImg(indice) {
+    img.forEach((item, i) => {
+      item.classList.remove("active");
+      if (i === indice) {
+        item.classList.add("active");
+      }
+    });
+  }
+
+  function siguienteImg() {
+    indice = (indice + 1) % totalImgs;
+    mostrarImg(indice);
+  }
+
+  setInterval(siguienteImg, 5000); // Cambiar imagen cada 5 segundos
+  mostrarImg(indice);
+});
+
+// Animación de scroll
+window.addEventListener("scroll", function () {
+  const parallaxElemento = document.querySelectorAll(".parallax");
+  parallaxElemento.forEach(function (element) {
+    let posicionScroll = window.pageYOffset;
+    element.style.backgroundPositionY = `${posicionScroll * 0.5}px`;
+  });
+});
 
 /******/ })()
 ;
