@@ -20,8 +20,10 @@ Para ejecutar este proyecto, se necesitara tener instalado Node.js y VSCode. Lue
 
 #### 1. Ejecutar VSCode para clonar el repositorio desde la consola:
 
+````
 git clone https://github.com/Luixls/FRONTEND-ea3.2-proyecto
 cd FRONTEND-ea3.2-proyecto
+````
 
 #### 2. Instalar (o actualiza) las dependencias:
 
