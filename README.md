@@ -18,27 +18,27 @@ Este proyecto trata acerca de un sitio web de presentación para la empresa "GRU
 
 Para ejecutar este proyecto, se necesitara tener instalado Node.js y VSCode. Luego, sigue estos pasos:
 
-##### 1. Ejecutar VSCode para clonar el repositorio desde la consola:
+#### 1. Ejecutar VSCode para clonar el repositorio desde la consola:
 
 git clone https://github.com/Luixls/FRONTEND-ea3.2-proyecto
 cd FRONTEND-ea3.2-proyecto
 
-##### 2. Instalar (o actualiza) las dependencias:
+#### 2. Instalar (o actualiza) las dependencias:
 
 npm install
 
 ## Ejecución del Proyecto
 
-##### 1. Ejecutar la compilación a través de webpack:
+#### 1. Ejecutar la compilación a través de webpack:
 
 npm run build
 
-##### 2. Abrir el directorio del proyecto:
+#### 2. Abrir el directorio del proyecto:
 
 El directorio se encontrará en tu disco local, carpeta de usuarios (por defecto).
 Ejemplo: C:\Usuarios\*tu nombre de usuario\*\FRONTEND-ea3.2-proyecto
 
-##### 3. Abrir el archivo HTML:
+#### 3. Abrir el archivo HTML:
 
 Dentro del directorio del proyecto, una vez el código ha sido compilado, la carpeta "dist" es creada y dentro de ella se encuentra el archivo "index.html" que es la página web del proyecto.
 
