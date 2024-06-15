@@ -109,3 +109,43 @@ button:hover {
 button:active {
   opacity: 0.8;
 }
+
+.equipo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.equipo .miembro {
+  max-width: 250px;
+  margin: 0 10px 20px;
+  text-align: center;
+}
+
+.equipo .miembro img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.equipo .miembro img:active {
+  opacity: 0.8;
+}
+
+.equipo .miembro img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.equipo .miembro h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.equipo .miembro p {
+  margin: 5px 0;
+  font-size: 1em;
+}
