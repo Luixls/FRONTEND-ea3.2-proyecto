@@ -96,26 +96,26 @@ El archivo `index.js` contiene la lógica de programación para el proyecto. A c
 
 ```
 document.addEventListener("DOMContentLoaded", function () {
-let indice = 0;
-const img = document.querySelectorAll(".carrusel-item");
-const totalImgs = img.length;
+  let indice = 0;
+  const img = document.querySelectorAll(".carrusel-item");
+  const totalImgs = img.length;
 
-function mostrarImg(indice) {
-img.forEach((item, i) => {
-item.classList.remove("active");
-if (i === indice) {
-item.classList.add("active");
-}
-});
-}
+  function mostrarImg(indice) {
+    img.forEach((item, i) => {
+      item.classList.remove("active");
+      if (i === indice) {
+        item.classList.add("active");
+      }
+    });
+  }
 
-function siguienteImg() {
-indice = (indice + 1) % totalImgs;
-mostrarImg(indice);
-}
+  function siguienteImg() {
+    indice = (indice + 1) % totalImgs;
+    mostrarImg(indice);
+  }
 
-setInterval(siguienteImg, 5000); // Cambiar imagen cada 5 segundos
-mostrarImg(indice);
+  setInterval(siguienteImg, 5000); // Cambiar imagen cada 5 segundos
+  mostrarImg(indice);
 });
 ```
 
