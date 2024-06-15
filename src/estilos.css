@@ -167,7 +167,7 @@ section {
 .carrusel {
   position: relative;
   width: 74%;
-  height: 300px;
+  height: 450px;
   overflow: hidden;
   margin-bottom: 20px;
   padding: 0;
@@ -193,5 +193,15 @@ section {
   background-attachment: scroll;
   background-size: cover;
   background-position: center;
-  height: 320px;
+  height: 450px;
+}
+
+@media (max-width: 768px) {
+  .carrusel {
+    height: 200px;
+  }
+
+  .parallax {
+    height: 200px;
+  }
 }
